@@ -1,0 +1,247 @@
+/* Fonts */
+@font-face {
+    font-family: 'Le_MurMure';
+    font-style: normal;
+    src: local("Le_MurMure"),
+         url("../fonts/Le_Murmure-Regular_web.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'NeueMetanaNext';
+    font-style: normal;
+    src: local("NeueMetanaNext"),
+         url("../fonts/NeueMetanaNext-SemiBold_1.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'Racama';
+    font-style: normal;
+    src: local("Racama"),
+         url("../fonts/Racama_1.woff") format("woff");
+}
+/* Fonts */
+
+
+
+/* Main Tags */
+:root {
+    --racama-font-offset: 10px;
+}
+
+html {
+    font-size: 11pt;
+}
+
+body {
+    font-size: 11pt;
+    font-family: 'Racama';
+    color: #000;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+mark {
+    background: linear-gradient(60deg, #9322FF, #93278F);
+    border-radius: 10px;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    padding: 0;
+}
+
+h1 {
+    font-family: 'NeueMetanaNext';
+}
+
+h2 {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #000;
+}
+/* Main Tags */
+
+
+
+
+/* Main Container */
+.container-fluid {
+    padding: 0;
+}
+/* Main Container */
+
+
+
+
+/* Navigation Bar */
+.offcanvas-title {
+    font-weight: bold;
+}
+
+.logo {
+    height: 16px;
+}
+
+.top-menu li a {
+    color: #000;
+    padding-top: var(--racama-font-offset);
+}
+
+.top-menu li a:hover {
+    color: #9322FF;
+    border-color: #9322FF;
+}
+
+.top-menu li a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: transparent;
+    transform: scaleX(0);
+    transition: all 0.2s ease;
+}
+
+.top-menu li a:hover::after {
+    background-color: #9322FF;
+    transform: scaleX(1);
+}
+
+.login {
+    padding-top: var(--racama-font-offset);
+}
+
+.btn-outline-dark:hover {
+    background: linear-gradient(60deg, #9322FF, #93278F);
+    color: #fff;
+    border-color: transparent;
+}
+
+.offcanvas.show li, .offcanvas.showing li {
+    width: fit-content;
+}
+
+.offcanvas.show .login, .offcanvas.showing .login {
+    border: none;
+}
+
+.offcanvas.show .login:hover, .offcanvas.showing .login:hover {
+    background-color: transparent;
+    color: #fff;
+}
+/* Navigation Bar */
+
+
+
+/* Main Page */
+.tags {
+    font-family: 'Le_MurMure';
+    text-transform: lowercase;
+    transform: scale(1, 0.3);
+    font-size: 30pt;
+}
+
+
+
+/* Features */
+.bg-color-secondary {
+    background-color: #f0f0f0;
+}
+
+.btn-features {
+    border: none;
+    height: 250px;
+    transition: transform 0.2s ease;
+}
+
+.btn-features:hover {
+    transform: translateY(-15px);
+}
+
+.btn-features-secondary {
+    background-color: #fff;
+    color: #000;
+}
+
+.btn-features-primary {
+    background: linear-gradient(60deg, #9322FF, #93278F);
+    color: #fff;    
+}
+
+.btn-features-icon {
+    opacity: 0.05;
+    right: -30px !important;
+    bottom: -30px !important;
+    width: 128px;
+    height: 128px;
+}
+/* Features */
+
+
+
+/* News */
+.news-list {
+    background-color: #000;
+    color: #fff;
+}
+
+.read-more {
+    color: #bb73ff;
+    width: fit-content;
+}
+
+.new-item:nth-child(2) {
+    border-right: solid 1px #303030;
+    border-left: solid 1px #303030;
+    padding: 0 1rem;
+}
+
+@media (max-width: 991px) {
+    .new-item:nth-child(2) {
+        border: none;
+        border-bottom: solid 1px #303030;
+        border-top: solid 1px #303030;
+        margin: 1.5rem 0;
+        padding: 1.5rem 1rem;
+    }
+}
+/* News */
+
+
+
+/* Socials */
+.social-icons {
+    width: 36px;
+}
+/* Socials */
+
+
+
+/* Footer */
+.bottom-menu li a {
+    color: #fff;
+    padding-top: var(--racama-font-offset);
+}
+
+footer .login 
+{
+    border-color: #fff;
+    color: #fff;
+}
+/* Footer */
